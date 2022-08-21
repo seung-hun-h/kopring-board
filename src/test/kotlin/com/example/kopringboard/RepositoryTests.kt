@@ -1,5 +1,7 @@
 package com.example.kopringboard
 
+import com.example.kopringboard.entity.Article
+import com.example.kopringboard.entity.Member
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

@@ -1,5 +1,7 @@
 package com.example.kopringboard
 
+import com.example.kopringboard.entity.Article
+import com.example.kopringboard.entity.Member
 import org.springframework.data.repository.CrudRepository
 
 interface ArticleRepository: CrudRepository<Article, Long> {

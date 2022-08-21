@@ -1,5 +1,6 @@
-package com.example.kopringboard
+package com.example.kopringboard.entity
 
+import com.example.kopringboard.toSlug
 import java.time.LocalDateTime
 import javax.persistence.*
 

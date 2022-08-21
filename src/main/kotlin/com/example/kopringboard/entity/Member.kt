@@ -1,4 +1,4 @@
-package com.example.kopringboard
+package com.example.kopringboard.entity
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
