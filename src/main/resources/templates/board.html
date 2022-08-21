@@ -6,7 +6,15 @@
 <body>
 <h1 th:text="${title}">Title</h1>
 
-
+<div class="articles">
+	<section th:each="article : ${articles}">
+		<header class="article-header">
+			<h2 class="article-title"><a th:href="@{/article/{slug}(slug = ${article.slug})}" th:text="${article.title}"></a></h2>
+			<div class="article-meta">By <string th:text="${article.author.firstname}"></string>, on <strong th:text="${article.addedAt}"></strong></div>
+		</header>
+		<div class="article-description" th:text="${article.headline}"></div>
+	</section>
+</div>
 
 <div th:replace="fragments/footer :: footer"></div>
 </body>

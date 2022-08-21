@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1 th:text="${title}">Title</h1>
+
+<section class="article">
+	<header class="article-header">
+		<h1 class="article-title" th:text="${article.title}">{{article.title}}</h1>
+		<p class="article-meta">By  <strong th:text="${article.author.firstname}">first name</strong>, on <strong th:text="${article.addedAt}">added at</strong></p>
+	</header>
+	<div class="article-description">
+		<p th:text="${article.headline}"></p>
+		<p th:text="${article.content}"></p>
+	</div>
+</section>
+
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

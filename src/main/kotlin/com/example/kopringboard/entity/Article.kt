@@ -12,6 +12,6 @@ class Article(
 	@ManyToOne var author: Member,
 	var slug: String = title.toSlug(),
 	var addedAt: LocalDateTime = LocalDateTime.now(),
-	@Id @GeneratedValue var id: Long? = null
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long? = null
 ) {
 }
